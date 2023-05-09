@@ -5,5 +5,5 @@ use (
 	./2encoding_characters
 	./3tamper_proof
 	./4confidential_encrypted
-	./5custon_data_types
+	./5custom_data_types
 )
