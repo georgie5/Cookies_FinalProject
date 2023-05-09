@@ -1,1 +1,9 @@
 go 1.20
+
+use (
+	./1basic_use
+	./2encoding_characters
+	./3tamper_proof
+	./4confidential_encrypted
+	./5custon_data_types
+)
