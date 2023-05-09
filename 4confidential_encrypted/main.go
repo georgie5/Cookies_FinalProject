@@ -43,7 +43,7 @@ func setCookieHandler(w http.ResponseWriter, r *http.Request) {
         Path:     "/",
         MaxAge:   3600,
         HttpOnly: true,
-        Secure:   true,
+        Secure:   false,
         SameSite: http.SameSiteLaxMode,
     }
 
