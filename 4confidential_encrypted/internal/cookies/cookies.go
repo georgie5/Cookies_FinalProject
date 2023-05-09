@@ -132,11 +132,8 @@ func WriteEncrypted(w http.ResponseWriter, cookie http.Cookie, secretKey []byte)
         return err
     }
 
-    // Prepare the plaintext input for encryption. Because we want to
-    // authenticate the cookie name as well as the value, we make this plaintext
-    // in the format "{cookie name}:{cookie value}". We use the : character as a
-    // separator because it is an invalid character for cookie names and
-    // therefore shouldn't appear in them.
+    // To prepare the plaintext input for encryption, we format the cookie name 
+    // and value as a string in the format of "{cookie name}:{cookie value}". 
     plaintext := fmt.Sprintf("%s:%s", cookie.Name, cookie.Value)
 
     // Encrypt the data using aesGCM.Seal(). By passing the nonce as the first

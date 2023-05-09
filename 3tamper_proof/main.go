@@ -20,6 +20,7 @@ func main() {
 	// real application you should read it in at runtime from a command-line
 	// flag or environment variable.
 	secretKey, err = hex.DecodeString("13d6b4dff8f84a10851021ec8608f814570d562c92fe6b5ec4c9f595bcb3234b")
+	
 	if err != nil {
 		log.Fatal(err)
 	}

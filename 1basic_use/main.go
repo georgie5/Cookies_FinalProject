@@ -26,11 +26,11 @@ func setCookieHandler(w http.ResponseWriter, r *http.Request) {
     // non-default attributes.
     cookie := http.Cookie{
         Name:     "exampleCookie",
-        Value:    "Hello world!",
+        Value:    "Hello Zoë!✔!",
         Path:     "/",
         MaxAge:   3600,
         HttpOnly: true,
-        Secure:   true,
+        Secure:   false,
         SameSite: http.SameSiteLaxMode,
     }
 
