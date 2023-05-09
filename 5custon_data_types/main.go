@@ -5,5 +5,5 @@ import(
 )
 
 func main(){
-	fmt.Println("basic use")
+	fmt.Println("Storing custom data types")
 }

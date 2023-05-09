@@ -5,5 +5,5 @@ import(
 )
 
 func main(){
-	fmt.Println("basic use")
+	fmt.Println("Confidential (encrypted) and tamper-proof cookies")
 }

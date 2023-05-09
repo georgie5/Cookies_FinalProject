@@ -5,5 +5,5 @@ import(
 )
 
 func main(){
-	fmt.Println("encoding use")
+	fmt.Println("Encoding special characters and maximum length	")
 }
