@@ -62,6 +62,7 @@ func WriteSigned(w http.ResponseWriter, cookie http.Cookie, secretKey []byte) er
     // Call our Write() helper to base64-encode the new cookie value and write
     // the cookie.
     return Write(w, cookie)
+
 }
 
 func ReadSigned(r *http.Request, name string, secretKey []byte) (string, error) {
